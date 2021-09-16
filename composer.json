@@ -1,0 +1,45 @@
+{
+    "name": "codexshaper/laravel-paytabs",
+    "description": "Paytabs API for Laravel.",
+    "keywords": [
+        "paytabs",
+        "creditcard",
+        "laravel-paytabs",
+        "paytabs-gateway",
+        "amex",
+        "appleypay",
+        "atfawry",
+        "knpay",
+        "mada",
+        "omannet",
+        "sadad",
+        "stcpay",
+        "stcpayqr",
+        "valu"
+    ],
+    "type": "library",
+    "require": {
+        "php": "^7.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Md Abu Ahsan Basir",
+            "email": "maab.career@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Paytabs\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Paytabs\\PaytabsServiceProvider"
+            ],
+            "aliases": {}
+        }
+    }
+}
