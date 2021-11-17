@@ -120,6 +120,11 @@ class Paytabs implements PaytabsContract
         return $this->client->sendRequest(self::QUERY_ENDPOINT, $data);
     }
 
+    public function getTransaction($tran_id)
+    {
+        return $this->client->sendRequest(self::QUERY_ENDPOINT, ['tran_ref' => $tran_id]);
+    }
+
     public function verifyPayment($tran_id)
     {
         $result = $this->client->sendRequest(self::QUERY_ENDPOINT, ['tran_ref' => $tran_id]);
